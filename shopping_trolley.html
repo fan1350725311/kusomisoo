@@ -1,0 +1,67 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>购物车</title>
+    <meta name="viewport" content="width=device-width,user-scalable=no,minimun-scale=1.0,maximun-scale=1.0">
+    <link rel="stylesheet" href="css/frame.css">
+    <link rel="stylesheet" href="css/shopping_trolley.css">
+    <script src="js/variable.js"></script>
+    <script src="js/shopping_trolley.js"></script>
+</head>
+<!-- 解决因底部固定定位商品内容被遮挡问题 -->
+<body style="padding-bottom: 200px;">
+<div id="big">
+    <!--手机图标区域-->
+    <header>
+        <a href="./index.html">&lt</a>
+        <h4>购物车</h4>
+        <div>...</div>
+    </header>
+
+    <section>
+        <article>
+            <aside></aside>
+            <figure><img src="images/尖椒炒牛肉.jpg"></figure>
+            <div>
+                <h4>尖椒炒牛肉</h4>
+                <span>原价</span>
+                <mark>68</mark>
+            </div>
+            <footer>
+                <aside><img src="images/dustbin.png"></aside>
+                <div class="goods_num">
+                    <span class="minus"></span>
+                    <b>1</b>
+                    <span class="plus"></span>
+                </div>
+            </footer>
+        </article>
+    </section>
+
+<footer>
+    <section>
+        <aside>
+            <span>备注</span>
+            <span>></span>
+        </aside>
+        <aside>
+            <span>桌号</span>
+            <span>18</span>
+        </aside>
+        <aside>
+            <span>共计</span>
+            <span class="SumPrice">0</span>
+        </aside>
+        <aside id="pay_price">
+            <span>应付</span>
+            <span>满减优惠28元</span>
+            <mark class="DisCountPrice">0</mark>
+        </aside>
+        <div><a href="./history_order.html"></a></div>
+    </section>
+    <!-- <a href="./history_order.html"></a> -->
+</footer>
+</div>
+</body>
+</html>

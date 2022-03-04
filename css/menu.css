@@ -1,0 +1,163 @@
+﻿/*商品详情图*/
+#big>article{
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+}
+#big>article>figure{
+    margin: 0;
+    height: 300px;
+    margin-bottom: 30px;
+}
+#big>article>figure>img{
+   display: block;
+}
+/*商品价格与购物车区*/
+#big>article>#foodPrice{
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#big>article>#foodPrice>article{
+    flex: 1;
+}
+#big>article>#foodPrice>article>aside{
+    font-size:18px;
+}
+#big>article>#foodPrice>article>div{
+    width: 10px;
+    height: 10px;
+    background-color: #F7A625;
+    transform: Rotate(45deg);
+    float:left;
+    margin-left: 20px;
+    margin-top: 4px;
+    position: relative;
+    left:-5px
+}
+#big>article>#foodPrice>article>mark{
+    display: inline-block;
+    margin-left: 40px;
+    font-size:20px;
+    background-color: white;
+    color: red;
+}
+#big>article>#foodPrice>article>mark:before{
+    content: "￥";
+}
+#big>article>#foodPrice>article>mark:after{
+    content: ".00";
+}
+#big>article>#foodPrice>div{
+    width: 160px;
+    height: 50px;
+    font-size: 18px;
+    border-radius: 25px;
+    background-color: #ffc107;
+    text-align: center;
+    line-height: 50px;
+    cursor: pointer;
+}
+/*商品介绍区*/
+#big>article>#foodList{
+    flex: 1;
+    height: 200px;
+    display:flex;
+    flex-direction: column;
+}
+#big>article>#foodList>aside{
+    
+	font-size:18px;
+    margin-left: 20px;
+    height: 50px;
+    display: flex;
+    
+}
+#big>article>#foodList>aside>b{
+    width: 100px;
+}
+#big>article>#foodList>aside>span{
+    flex: 1;
+    
+}
+/*底部购物车*/
+footer{
+    display: flex;
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    border-top:solid 1px #cccccc;
+    bottom:0px;
+}
+footer figure{
+    margin: 0;
+    width: 60px;
+    height: 60px;
+    border-radius: 60px;
+    background-color: #ffc107;
+    position: relative;
+    top:-30px;
+    left: 20px;
+}
+footer figure img{
+    width: 70%;
+    margin-left: 8px;
+    margin-top: 8px;
+}
+footer figure b{
+    position: relative;
+    display: inline-block;
+    width: 23px;
+    height: 23px;
+    line-height: 23px;
+    border-radius: 23px;
+    text-align: center;
+    background-color: red;
+    color: white;
+    top:-60px;
+    left: 35px;
+}
+footer aside{
+    width: 150px;
+    height: 50px;
+    font-size: 18px;
+    line-height: 50px;
+    text-align: center;
+    background-color:#ffc107;
+    position: absolute;
+    right: 0px;
+    cursor: pointer;
+    
+    
+}
+footer aside a{
+    color:black
+}
+footer>div{
+    text-align: center;
+    line-height: 50px;
+    color: red;
+    font-size: larger;
+    position: relative;
+    left: 50px;
+    
+}
+footer>div::before{
+    content: "共";
+    font-size: 10px;
+    color: #000;
+}
+footer>div::after{
+    content: "元";
+    font-size: 10px;
+    color: #000;
+}
+@keyframes go {
+    from{
+        transform: translate(200px,-300px);
+    }
+    to{
+        transform: translateY(0px);
+    }
+}
